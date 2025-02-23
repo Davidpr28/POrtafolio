@@ -1,0 +1,88 @@
+/* Estilos generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0b5bb;
+    color: #212529;
+    margin-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e2357, rgb(78, 33, 33));
+    padding: 100px 0;
+}
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: fadeIn 3s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+/* Tarjetas de Proyectos y Experiencia */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+.card:hover {
+    animation: heartbeat 1.5s infinite;
+}
+
+/* Contacto */
+#contact i {
+    transition: color 0.3s;
+}
+#contact i:hover {
+    color: #007bff;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background: linear-gradient(135deg, #001f3f, #0074D9);
+    color: white;
+}
+.dark-mode .navbar {
+    background-color: #001f3f !important;
+}
+.dark-mode .card {
+    background-color: #262829;
+    color: white;
+}
+
+/* Botón de Modo Oscuro */
+#darkModeToggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+}

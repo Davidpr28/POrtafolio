@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Desarrollador Frontend">
+    <meta name="author" content="Nombre del Desarrollador">
+    <title>Portafolio de DesarrolladorFrontend</title>
+
+    <!-- Vinculación de Bootstrap y Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo CSS -->
+
+    <style>
+        /* Estilos básicos para el modo claro */
+        body {
+            background-color: white;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-light {
+            background-color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        /* Estilos para el modo oscuro */
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        .dark-mode .navbar-light {
+            background-color: #333333;
+        }
+
+        .dark-mode .card {
+            background-color: #333333;
+            color: white;
+        }
+
+        /* Animación de latido en las cards */
+        .card-heart {
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar fija -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="text-center py-5">
+        <div class="container">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocI8YAFsI-0w4zO-klFwNbDbkHKDTWVDh-C0WALMvd1NqkqTc3E3=s288-c-no" alt="Desarrollador" class="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;">
+            <h1 class="display-4">Hola, Soy Julio David P. Rodríguez</h1>
+            <p class="lead">Soy Desarrollador Frontend | Experto en HTML, CSS, JavaScript</p>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <p class="text-center">Soy un desarrollador frontend con experiencia trabajando en proyectos de tecnología, estudio en la Universidad O&M actualmente,y tengo 20 años de edad...</p>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyectos</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card card-heart">
+                        <img src="https://www.tucanit.com/wp-content/uploads/2021/10/almadraba.jpg" class="card-img-top img-thumbnail" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 1</h5>
+                            <p class="card-text">Portafolio personal: Una página web donde muestro mis habilidades, proyectos anteriores, y experiencia. Generalmente, uso HTML, CSS, JavaScript y frameworks como React para hacerlo interactivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card card-heart">
+                        <img src="https://www.tucanit.com/wp-content/uploads/2021/10/oficina.jpg" class="card-img-top img-thumbnail" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">PI de autenticación: Desarrollar una API que permita a los usuarios registrarse, iniciar sesión y gestionar sus sesiones. Puedo usar Node.js con Express y JWT para la autenticación.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card card-heart">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIjzhc7m8zFXXhW09E_ZnBNVNRCAwdKZHAQ&s" class="card-img-top img-thumbnail" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Red social simple: Una plataforma donde los usuarios pueden registrarse, crear publicaciones, comentar y dar "me gusta". Esto combinaría frontend con React y un backend en Node.js/Express, con base de datos en MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Experiencia Profesional</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card card-heart">
+                        <img src="https://blog.sinapsis.agency/wp-content/uploads/2021/04/DEFINICIONES-DESARROLLO-FRONT-END.jpg" class="card-img-top img-thumbnail" alt="Experiencia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollador Frontend</h5>
+                            <p class="card-text">Me encargo de la parte visible de las aplicaciones web. Uso tecnologías como HTML, CSS, JavaScript, y frameworks como React, Angular o Vue.js. Me enfoco en crear interfaces de usuario interactivas, atractivas y optimizadas para distintos dispositivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card card-heart">
+                        <img src="https://www.dongee.com/tutoriales/content/images/2023/01/backend.png" class="card-img-top img-thumbnail" alt="Experiencia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollador Backend</h5>
+                            <p class="card-text">Trabajo en el lado del servidor, creando y gestionando la lógica que procesa las solicitudes de los usuarios. Utilizo lenguajes como Node.js, Python, Ruby o PHP, y bases de datos como MySQL, PostgreSQL o MongoDB. Me encargo de la autenticación de usuarios, el manejo de datos y la integración de servicios externos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card card-heart">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj14zguadt355pp8CPYNdqJANGOkhFZ7qLL-b1VtY31Vpj5OdEpmEhmHXk9KEEjZIf-3olyP9r4BOLzvpZqLY__S3cJlDLFcJJPTgMwnGO0raY9GYTAr0sxGKN9nk9yq_a7ex5jpFz1gGbM/s1600/java.jpg" class="card-img-top img-thumbnail" alt="Experiencia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollador Full Stack</h5>
+                            <p class="card-text">Combina tanto el frontend como el backend. Diseñar y desarrollar aplicaciones completas, gestionando tanto la interfaz como la lógica detrás de ellas. Trabajo con APIs, autentificación de usuarios, bases de datos y aseguro que la aplicación esté bien conectada y funcione correctamente de extremo a extremo.).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="contacto" class="container text-center">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mis redes sociales:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/david-rodriguez-85b937352/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Davidpr28" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> <!-- Vincula tu archivo JS -->
+</body>
+</html>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
